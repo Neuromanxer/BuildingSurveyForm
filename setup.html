@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+   <h1 id="title">Survey Form</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+   <p id="description">Please answer the following questions.</p>
+   <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="name" id="name-label">
+          Enter Your Name: <input id="name" name="first-name" type="text"placeholder="Enter age here" required />
+        </label>
+<label for="email" id="email-label">Enter Your Email: 
+  <input id="email" name="email" type="email" placeholder="Enter email here"required />
+</label>
+  <label for="age" id="number-label">Input your age (years): 
+    <input id="number" type="number" name="age" min="10" max="120" placeholder="Enter age here"/>
+  </label>
+   <label for="referrer">How did you hear about us?
+    <select id="dropdown" name="referrer">
+      <option value="">(select one)</option>
+            <option value="1">News</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+<fieldset>
+        <legend>Gender type (required)</legend>
+   <label for="gender"><input value="male" type="radio" name="gender-type" class="inline" /> Male</label>
+     <label for="gender"><input value="female" type="radio" name="gender-type" class="inline" checked /> Female</label>
+<label 
+for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          </label>
+<label for="checkbox1">
+        <input type="checkbox" id="checkbox1" name="option1" value="value1" >
+        White
+    </label><br>
+     <label for="checkbox2">
+        <input type="checkbox" id="checkbox2" name="option2" value="value2">
+        Checkbox 2
+    </label><br>
+ <input type="submit" id="submit"value="Submit" />
+</form>
